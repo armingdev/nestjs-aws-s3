@@ -1,6 +1,6 @@
 {
   "name": "nest-aws-s3",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Comprehensive, Easy-to-Use NestJS Module for Amazon S3 Integration",
   "main": "dist/index.js",
   "scripts": {
