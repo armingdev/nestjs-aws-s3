@@ -4,6 +4,7 @@
   "description": "A Comprehensive, Easy-to-Use NestJS Module for Amazon S3 Integration",
   "main": "index.ts",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
