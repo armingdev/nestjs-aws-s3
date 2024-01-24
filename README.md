@@ -1,4 +1,4 @@
-# nestjs-aws-s3
+# nest-aws-s3
 
 This is a simple, clean, and easy-to-use NestJS module for Amazon S3 integration, leveraging the latest AWS SDK v3. It's designed for quick integration and minimal setup, making your development process smoother.
 
@@ -11,7 +11,7 @@ This is a simple, clean, and easy-to-use NestJS module for Amazon S3 integration
 ## Installation
 
 ```bash
-npm install nestjs-aws-s3
+npm install nest-aws-s3
 ```
 
 ## Configuration
@@ -19,7 +19,7 @@ npm install nestjs-aws-s3
 In your NestJS module:
 
 ```typescript
-import { S3Module } from 'nestjs-aws-s3';
+import { S3Module } from 'nest-aws-s3';
 
 @Module({
   imports: [
@@ -79,7 +79,7 @@ export class YourService {
 ```
 ## Supported Methods
 
-The `nestjs-aws-s3` package includes a variety of methods for interacting with AWS S3, including:
+The `nest-aws-s3` package includes a variety of methods for interacting with AWS S3, including:
 
 - `uploadFile(bucket: string, key: string, body: Buffer)`: Upload a file to a specified bucket.
 - `getFile(bucket: string, key: string)`: Retrieve a file from a specified bucket.
