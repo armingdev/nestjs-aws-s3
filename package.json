@@ -32,6 +32,7 @@
     "s3",
     "aws-sdk-v3"
   ],
+  "files": ["dist"],
   "author": "Armin Gerina",
   "license": "ISC",
   "bugs": {
