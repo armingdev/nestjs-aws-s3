@@ -1,5 +1,15 @@
 import {ConflictException, Injectable, InternalServerErrorException, NotFoundException} from '@nestjs/common';
-import { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand, ListObjectsCommand, CopyObjectCommand, CreateBucketCommand, DeleteBucketCommand } from '@aws-sdk/client-s3';
+import {
+    S3Client,
+    PutObjectCommand,
+    GetObjectCommand,
+    DeleteObjectCommand,
+    ListObjectsCommand,
+    CopyObjectCommand,
+    CreateBucketCommand,
+    DeleteBucketCommand,
+    DeleteObjectsCommand
+} from '@aws-sdk/client-s3';
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 
 
@@ -36,6 +46,17 @@ export class S3Service {
         } catch (error: unknown) {
             if (error instanceof Error) {
                 throw new InternalServerErrorException(`Error deleting file: ${error.message}`);
+            }
+        }
+    }
+
+    async deleteFiles(bucket: string, keys: string[]) {
+        try {
+            const deleteObjects = keys.map((Key) => ({ Key }));
+            return await this.s3Client.send(new DeleteObjectsCommand({ Bucket: bucket, Delete: { Objects: deleteObjects } }));
+        } catch (error: unknown) {
+            if (error instanceof Error) {
+                throw new InternalServerErrorException(`Error deleting files: ${error.message}`);
             }
         }
     }

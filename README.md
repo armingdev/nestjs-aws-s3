@@ -84,6 +84,7 @@ The `nest-aws-s3` package includes a variety of methods for interacting with AWS
 - `uploadFile(bucket: string, key: string, body: Buffer)`: Upload a file to a specified bucket.
 - `getFile(bucket: string, key: string)`: Retrieve a file from a specified bucket.
 - `deleteFile(bucket: string, key: string)`: Delete a file from a specified bucket.
+- `deleteFiles(bucket: string, keys: string[])`: Delete multiple files from a specified bucket.
 - `listFiles(bucket: string)`: List all files in a specified bucket.
 - `copyFile(sourceBucket: string, sourceKey: string, destBucket: string, destKey: string)`: Copy a file within or across buckets.
 - `createBucket(bucket: string)`: Create a new S3 bucket.
