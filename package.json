@@ -1,6 +1,6 @@
 {
   "name": "nest-aws-s3",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A Comprehensive, Easy-to-Use NestJS Module for Amazon S3 Integration",
   "main": "dist/index.js",
   "scripts": {
@@ -15,22 +15,12 @@
     "nestjs",
     "aws",
     "s3",
-    "aws",
-    "s3",
-    "nestjs",
     "module",
     "file",
     "storage",
     "amazon",
-    "s3",
-    "nestjs",
-    "aws",
-    "nestjs",
-    "s3",
-    "nestjs",
-    "aws",
-    "s3",
-    "aws-sdk-v3"
+    "aws-sdk-v3",
+    "nest"
   ],
   "files": ["dist"],
   "author": "Armin Gerina",

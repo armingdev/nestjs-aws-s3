@@ -94,6 +94,23 @@ The `nest-aws-s3` package includes a variety of methods for interacting with AWS
 
 These methods provide comprehensive coverage of common S3 operations, simplifying the process of integrating AWS S3 into your NestJS applications.
 
+## Helper Classes and Their Methods
+Our nest-aws-s3 module enhances S3 operations with several helper classes:
+
+#### UploadFileChain
+
+- `withUrl()`: Generates a URL for the uploaded file.
+- `withPublicAccess(allowPublicAccess: boolean`): Sets the file's public access.
+
+#### GetFileChain
+
+- `withMetaData()`: Retrieves metadata of the file.
+- `withDownloadLink()`: Generates a download link for the file.
+
+#### ListFilesChain
+
+- `listFilesWithFilter(prefix?: string, suffix?: string)`: Filters files with specific prefix and/or suffix.
+- `getBucketSize()`: Calculates the total size of all files in the bucket.
 
 ## Contributing
 Feel free to contribute, report issues, and request features!
